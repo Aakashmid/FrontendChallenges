@@ -12,6 +12,7 @@
 
 <body style="margin: 0px;">
     <header>
+        <!-- Navigation bar -->
         <nav class="navbar">
             <ul class="brand">
                 <a href="" class="">
@@ -39,24 +40,32 @@
                     </span>
                 </li>
             </ul>
+            <ul class="nav-links2 flex">
+                <a href="" class="btn-2">Submit a request</a>
+                <a href="" class="btn-1">Sign in </a>
+            </ul>
         </nav>
 
+        <!-- Search bar -->
         <div class="SearchInput">
             <input type="text">
             <span class="close" onclick="showSearch()">&times;</span>
         </div>
+        <!-- dropdown navigation -->
         <ul id="navdropdown" class="hello">
             <li class=""><a href="" class="">Submit Request</a></li>
             <hr>
             <li class=""><a href="" class="">Sign in</a></li>
         </ul>
+ 
     </header>
     <!-- main -->
     <div class="main">
         <div class="jumbotron">
             <form action="#" class="searchForm">
                 <label for="search">How can we help ?</label>
-                <input id="search" name="search" type="text">
+                <input id="search" name="search" type="text" placeholder="Search">
+                <button hidden type="submit"></button>
             </form>
 
         </div>
