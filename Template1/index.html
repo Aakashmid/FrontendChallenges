@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Abstract</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/72038e3a92.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="margin: 0px;">
+    <header>
+        <nav class="navbar">
+            <ul class="brand">
+                <a href="" class="">
+                    <img src="logo.png" alt="" class="logoImg" width="30px">
+                </a>
+                <li class="">
+                    <a href="" class="">
+                        Abstract
+                    </a>
+                </li>
+                <li class="">|</li>
+                <li class=""><a href="#" class="">Help Center</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li class="search" onclick="showSearch()"><span class="">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <li class="">
+                    <span class="hamburger" id="hamburger" onclick="showNav()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </span>
+                    <span id="closeNavbtn" onclick="showNav()">
+                        &times;
+                    </span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="SearchInput">
+            <input type="text">
+            <span class="close" onclick="showSearch()">&times;</span>
+        </div>
+        <ul id="navdropdown" class="hello">
+            <li class=""><a href="" class="">Submit Request</a></li>
+            <hr>
+            <li class=""><a href="" class="">Sign in</a></li>
+        </ul>
+    </header>
+    <!-- main -->
+    <div class="main">
+        <div class="jumbotron">
+            <form action="#" class="searchForm">
+                <label for="search">How can we help ?</label>
+                <input id="search" name="search" type="text">
+            </form>
+
+        </div>
+        <div class="cards_container">
+            <div class="flex box-container">
+                <div class="box flex">
+                    <div class="box-img">
+                        <img src="img1.png" class="CardImg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h3 class="">
+                            Manage your account</h3>
+                        <p class="">Configure your account settings, such as your email, profile details, and password.
+                        </p>
+                        <a href="" class="">Learn more >></a>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="box-img">
+                        <img src="img3.png" class="CardImg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h3 class="">Manage organizations, teams, and projects</h3>
+                        <p class="">Use Abstract organizations, teams, and projects to organize your people and your
+                            work.</p>
+                        <a href="" class="">Learn more >></a>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="box-img">
+                        <img src="img4.png" class="CardImg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h3 class="">Manage billing</h3>
+                        <p class="">Change subscriptions and payment details.</p>
+                        <a href="" class="">Learn more >></a>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="box-img">
+                        <img src="img5.png" class="CardImg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h3 class="">
+                            Authenticate to Abstract</h3>
+                        <p class="">Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                        <a href="" class="">Learn more >></a>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="box-img">
+                        <img src="img6.png" class="CardImg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <h3 class="">
+                            Abstract support</h3>
+                        <p class="">Get in touch with humar .</p>
+                        <a href="" class="">Learn more >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <!-- js -->
+    <script>
+        function showSearch() {
+            let el = document.getElementsByClassName('SearchInput')[0];
+            if (el.style.display == 'none') {
+                el.style.display = 'flex';
+            }
+            else {
+                el.style.display = 'none';
+            }
+        }
+        function showNav() {
+            let navlist = document.getElementById('navdropdown');
+            let ham = document.getElementById('hamburger');
+            let close = document.getElementById('closeNavbtn');
+            if (window.getComputedStyle(navlist).display == 'none') {
+                close.style.display = 'block';
+                ham.style.display = 'none';
+                navlist.style.display = 'block';
+            }
+            else {
+                close.style.display = 'none';
+                ham.style.display = 'block';
+                navlist.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

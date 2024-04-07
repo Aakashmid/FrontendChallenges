@@ -1,0 +1,292 @@
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: ; */
+
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 0px 10px;
+}
+
+.search {
+    display: block;
+}
+
+.hamburger div {
+    background: white;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 2px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: block;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    /* color: white; */
+    padding: 10px 0px;
+
+}
+
+.brand li {
+    margin-right: 10px;
+    font-size: 23px;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+.brand li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logoImg {
+    border-radius: 50%;
+}
+
+.SearchInput {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
+    padding: 20px 0px;
+
+    display: none;
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.SearchInput input {
+    font-size: x-large;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.SearchInput input:focus {
+    border: 2px solid black;
+}
+
+.SearchInput span {
+    font-size: x-large;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.close:active {
+    font-size: xx-large;
+}
+
+.jumbotron {
+    background-color:
+        #dadbf1;
+    padding: 90px 30px;
+}
+
+.searchForm {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchForm label {
+    font-size: xx-large;
+    padding: 30px 0px;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+.searchForm input {
+    width: 90%;
+    padding: 15px;
+    font-size: larger;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.searchForm input:focus {
+    border: 2px solid #4C5FD5;
+}
+
+#navdropdown {
+    background-color: black;
+    position: absolute;
+    color: white;
+    padding: 50px 40px;
+    top: 71px;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+header {
+    position: relative;
+}
+
+#navdropdown li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navdropdown li {
+    font-size: larger;
+    text-align: center;
+}
+
+#closeNavbtn {
+    display: none;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+/* Box container styles */
+
+.flex {
+    display: flex;
+}
+
+.cards_container {
+    padding: 20px 10px;
+}
+
+.box-container {
+    flex-direction: column;
+    align-items: start;
+}
+
+.box {
+    flex-direction: row;
+    align-items: start;
+    padding: 10px 0px;
+
+}
+
+.box-img {
+    padding: 25px 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.box p {
+    font-size: larger;
+    font-family: sans-serif;
+
+}
+
+.box h3 {
+    font-family: sans-serif;
+}
+
+.box a {
+    color: #4C5FD5;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.box a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.CardImg {
+    width: 60px;
+}
+
+@media (min-width:601px) and (max-width:1024px) {
+
+    .searchForm label {
+        font-size: 50px;
+        padding: 30px;
+    }
+}
+
+@media (min-width:1025px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .brand li {
+        font-size: x-large;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .searchForm input {
+        width: 50%;
+        padding: 20px;
+
+    }
+
+    .jumbotron {
+        padding: 80px 60px;
+    }
+
+    .searchForm label {
+        font-size: 80px;
+        padding: 40px;
+    }
+
+    /* Card container styles */
+    .box-container {
+        flex-direction: row;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+    }
+
+    .cards_container {
+        padding: 50px 100px;
+    }
+
+    .box {
+        padding: 20px;
+        flex: 1 600px;
+        box-sizing: border-box;
+    }
+
+    .box h3 {
+        font-size: x-large;
+    }
+    .box p{
+        font-size: x-large;
+    }
+    .box-img {
+        padding: 25px 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .CardImg {
+        width: 100px;
+    }
+
+}
