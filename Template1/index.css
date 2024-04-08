@@ -50,7 +50,6 @@ ul {
 .brand li {
     margin-right: 10px;
     font-size: 23px;
-    font-family: Helvetica;
     font-weight: 500;
 }
 
@@ -172,7 +171,7 @@ header {
 }
 
 .cards_container {
-    padding: 20px 10px;
+    padding: 50px 10px;
 }
 
 .box-container {
@@ -226,7 +225,7 @@ a {
 .btn-1 {
     text-decoration: none;
     font-size: x-large;
-    font-family: Helvetica;
+ 
     color: white;
     margin-right: 8px;
     padding: 10px 20px;
@@ -248,7 +247,7 @@ a {
 .btn-2 {
     text-decoration: none;
     font-size: x-large;
-    font-family: Helvetica;
+
     color: white;
     margin-right: 8px;
     padding: 10px 20px;
@@ -303,7 +302,8 @@ a {
 
 @media (min-width:1025px) {
     .navbar {
-        justify-content: space-around;
+        padding-left: 70px;
+        padding-right: 70px;
     }
     
     .logoImg {
@@ -341,7 +341,7 @@ a {
     }
     
     .cards_container {
-        padding: 50px 100px;
+        padding: 60px 100px;
     }
     
     .box {
@@ -400,7 +400,7 @@ a {
         font-size: larger;
         font-family: sans-serif;
     }
-    
+
 }
 @media (min-width:601px) and (max-width:1024px) {
 
