@@ -222,13 +222,6 @@ a {
     width: 60px;
 }
 
-@media (min-width:601px) and (max-width:1024px) {
-
-    .searchForm label {
-        font-size: 50px;
-        padding: 30px;
-    }
-}
 
 .btn-1 {
     text-decoration: none;
@@ -261,7 +254,7 @@ a {
     padding: 10px 20px;
     border: white solid 1px;
     border-radius: 10px;
-
+    
 }
 
 .nav-links2 {
@@ -272,19 +265,22 @@ a {
 .footer {
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 5px;
+    padding: 20px 5px 40px 5px;
     background-color: black;
     flex-direction: row;
-    /* flex-grow:1; */
     flex-wrap: wrap;
+    align-items: start;
+
 }
 
 .footer-box {
+    flex-grow:1;
     width: 50%;
 }
 
 .footer-box h2 {
     color: white;
+    font-family: sans-serif;
 }
 
 .footer-link-box {
@@ -294,17 +290,26 @@ a {
 
 .footer-link-box a {
     color: white;
+    font-family: sans-serif;
+    
+}
+.footer-link-box a:hover,.footer-link-box a:active{
+    text-decoration: underline;
+}
+
+#Copyright li{
+ color: white;
 }
 
 @media (min-width:1025px) {
     .navbar {
         justify-content: space-around;
     }
-
+    
     .logoImg {
         width: 40px;
     }
-
+    
     .brand li {
         font-size: x-large;
     }
@@ -312,74 +317,95 @@ a {
     .search {
         display: none;
     }
-
+    
     .searchForm input {
         width: 50%;
         padding: 20px;
-
+        
     }
-
+    
     .jumbotron {
         padding: 80px 60px;
     }
-
+    
     .searchForm label {
         font-size: 80px;
         padding: 40px;
     }
-
+    
     /* Card container styles */
     .box-container {
         flex-direction: row;
         /* justify-content: space-between; */
         flex-wrap: wrap;
     }
-
+    
     .cards_container {
         padding: 50px 100px;
     }
-
+    
     .box {
         padding: 20px;
         flex: 1 600px;
         box-sizing: border-box;
     }
-
+    
     .box h3 {
         font-size: x-large;
     }
-
+    
     .box p {
         font-size: x-large;
     }
-
+    
     .box-img {
         padding: 25px 20px;
         width: fit-content;
         height: fit-content;
     }
-
+    
     .CardImg {
         width: 80px;
     }
-
-
+    
+    
     /*  */
     .nav-links {
         display: none;
     }
-
+    
     .nav-links2 {
         display: block;
     }
-
-
+    
+    
     /* Footer styles */
     .footer {
         padding:20px 50px ;
     }
-
+    
     .footer-box {
         width: 200px;
+        padding: 0px 20px;
+    }
+    .footer-link-box li{
+        margin-top: 4px;
+    }
+
+    #Copyright{
+        width: 240px;
+        padding: 150px 0px;
+    }
+    #Copyright li{
+        font-size: larger;
+        font-family: sans-serif;
+    }
+    
+}
+@media (min-width:601px) and (max-width:1024px) {
+
+    .searchForm label {
+        font-size: 50px;
+        padding: 30px;
     }
 }
