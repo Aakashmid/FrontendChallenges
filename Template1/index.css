@@ -105,6 +105,8 @@ ul {
     padding: 90px 30px;
 }
 
+
+/* Form of jumbtron */
 .searchForm {
     /* width: 100%; */
     display: flex;
@@ -124,12 +126,12 @@ ul {
     padding: 15px;
     font-size: larger;
     border-radius: 5px;
-    border: 1px solid black;
-    outline: none;
+    border: none;
+    outline: black solid 1px;
 }
 
 .searchForm input:focus {
-    border: 2px solid #4C5FD5;
+    outline: 2px solid #4C5FD5;
 }
 
 #navdropdown {
@@ -228,7 +230,7 @@ a {
     }
 }
 
-.btn-1{
+.btn-1 {
     text-decoration: none;
     font-size: x-large;
     font-family: Helvetica;
@@ -236,17 +238,21 @@ a {
     margin-right: 8px;
     padding: 10px 20px;
     background-color: #4C5FD5;
-    border:0px;
+    border: 0px;
     border-radius: 10px;
 }
-.btn-1:hover{
+
+.btn-1:hover {
     color: black;
     background-color: white;
 }
-.btn-1:active,.btn-2:active{
+
+.btn-1:active,
+.btn-2:active {
     text-decoration: none;
 }
-.btn-2{
+
+.btn-2 {
     text-decoration: none;
     font-size: x-large;
     font-family: Helvetica;
@@ -257,12 +263,46 @@ a {
     border-radius: 10px;
 
 }
-.nav-links2{
+
+.nav-links2 {
     display: none;
 }
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 5px;
+    background-color: black;
+    flex-direction: row;
+    /* flex-grow:1; */
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    width: 50%;
+}
+
+.footer-box h2 {
+    color: white;
+}
+
+.footer-link-box {
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer-link-box a {
+    color: white;
+}
+
 @media (min-width:1025px) {
     .navbar {
         justify-content: space-around;
+    }
+
+    .logoImg {
+        width: 40px;
     }
 
     .brand li {
@@ -308,9 +348,11 @@ a {
     .box h3 {
         font-size: x-large;
     }
-    .box p{
+
+    .box p {
         font-size: x-large;
     }
+
     .box-img {
         padding: 25px 20px;
         width: fit-content;
@@ -323,11 +365,21 @@ a {
 
 
     /*  */
-    .nav-links{
+    .nav-links {
         display: none;
     }
-    .nav-links2{
+
+    .nav-links2 {
         display: block;
     }
-    
+
+
+    /* Footer styles */
+    .footer {
+        padding:20px 50px ;
+    }
+
+    .footer-box {
+        width: 200px;
+    }
 }
