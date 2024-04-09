@@ -1,0 +1,20 @@
+/* For small screen  */
+#navbar{
+    background-color: white;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* for larger screen  */
+@media (min-width:1025px) {
+    
+}
+
+/* for medium screen  */
+@media  (min-width:601px) and (max-width:1024px){
+
+}
