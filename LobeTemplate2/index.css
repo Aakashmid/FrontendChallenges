@@ -1,20 +1,157 @@
 /* For small screen  */
-#navbar{
-    background-color: white;
-    
+
+/* navbar styles */
+
+a {
+    text-decoration: none;
 }
 
-ul{
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#navbar {
+    background-color: rgba(255, 255, 255, 0.411);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+}
+
+.logo {
+    color: black;
+    font-size: xx-large;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+.btn-gr {
+    display: none;
+    color: white;
+    font-size: larger;
+    font-family: Arial;
+    background-color: #04ddb2;
+    padding: 13px 25px;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+
+#nav_links {
+    display: none;
+}
+
+.link-item {
+    padding: 10px 20px;
+    font-size: large;
+    font-family: Arial;
+}
+
+.link-item a {
+    color: gray;
+}
+
+#hamburger div {
+    background: black;
+    margin: 3px;
+    width: 15px;
+    height: 2px;
+}
+
+#hamburger {
+    background-color: #52525213;
+    padding: 8px;
+    cursor: pointer;
+    display: block;
+    border-radius: 100%;
+}
+
+ul {
     list-style: none;
 }
 
 
-/* for larger screen  */
-@media (min-width:1025px) {
-    
+/* main body style */
+main div {
+    padding:10px;
 }
 
-/* for medium screen  */
-@media  (min-width:601px) and (max-width:1024px){
+.jumbotron {
+    padding:0px;
+}
 
+.jumbotron .title {
+    font-family: Arial;
+    font-weight: 800;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom:10px ;
+}
+.jumbotron .content{
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    text-wrap: wrap;
+    color: rgb(92, 92, 92);
+}
+@media (min-width:601px) and (max-width:743px) {}
+
+@media (min-width:744px) {
+    .btn-gr {
+        display: block;
+    }
+
+    #nav_links {
+        display: flex;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+/* for larger screen  */
+@media (min-width:1025px) {
+    #navbar {
+        background-color: rgba(255, 255, 255, 0.411);
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 60px;
+    }
+
+    main div {
+        width: 80%;
+        margin: auto;
+    }
+
+    .jumbotron {
+        padding-top:0px ;
+        width: 40%;
+    }
+
+    .jumbotron .title {
+        font-family: Arial;
+        font-weight: 800;
+        font-size: 60px;
+        text-align: center;
+        margin-bottom:10px ;
+    }
+    .jumbotron .content{
+        text-align: center;
+        font-size: x-large;
+        font-family: sans-serif;
+        text-wrap: wrap;
+        /* width: 50%; */
+    }
 }
