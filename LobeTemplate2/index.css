@@ -19,14 +19,13 @@ a {
 }
 
 #navbar {
-    background-color: rgba(255, 255, 255, 0.411);
+    background-color: rgba(255, 255, 255, 0.99);
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-}
-
-footer {
+    padding: 15px 30px;
     position: fixed;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -83,7 +82,7 @@ ul {
 
 
 /* main body style */
-main div {
+main  {
     padding:10px;
 }
 
@@ -96,7 +95,7 @@ main div {
     font-weight: 800;
     font-size: xx-large;
     text-align: center;
-    margin-bottom:10px ;
+    margin-bottom:5px ;
 }
 .jumbotron .content{
     text-align: center;
@@ -105,17 +104,44 @@ main div {
     text-wrap: wrap;
     color: rgb(92, 92, 92);
 }
+
+.thumbnail{
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-radius: 80px; */
+}
+.thumbnail img{
+    border-radius: 20px;
+}
+#backgroundSpan{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height : 100%;
+    background-color: rgba(128, 128, 128, 0.705);
+    box-sizing: border-box;
+}
+
+
+#videoContainer{
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
 @media (min-width:601px) and (max-width:743px) {}
 
 @media (min-width:744px) {
     .btn-gr {
         display: block;
     }
-
+    
     #nav_links {
         display: flex;
     }
-
+    
     #hamburger {
         display: none;
     }
@@ -124,22 +150,21 @@ main div {
 /* for larger screen  */
 @media (min-width:1025px) {
     #navbar {
-        background-color: rgba(255, 255, 255, 0.411);
         justify-content: space-between;
         align-items: center;
         padding: 10px 60px;
     }
-
+    
     main div {
         width: 80%;
         margin: auto;
     }
-
+    
     .jumbotron {
         padding-top:0px ;
         width: 40%;
     }
-
+    
     .jumbotron .title {
         font-family: Arial;
         font-weight: 800;
@@ -152,6 +177,11 @@ main div {
         font-size: x-large;
         font-family: sans-serif;
         text-wrap: wrap;
+        
         /* width: 50%; */
+    }
+    .thumbnail img:hover{
+        transition:transform 0.5s;
+        transform: scale(1.01);
     }
 }

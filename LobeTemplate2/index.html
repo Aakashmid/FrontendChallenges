@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>lobe.ai/tour</title>
+    <script src="index.js"></script>
 </head>
+
 <body style="margin: 0px;">
     <header>
         <nav class="flex" id="navbar">
-            <span class="logo-span"><a href="/" class="logo" >Lobe</a></span>
+            <span class="logo-span"><a href="/" class="logo">Lobe</a></span>
             <ul id="nav_links" class="flex">
                 <li class="link-item"><a href="" class="">Overview</a></li>
                 <li class="link-item"><a href="" class="">Examples</a></li>
@@ -26,16 +29,31 @@
 
             </div>
         </nav>
+        <div class="" style="width: 100%; height: 50px;"></div>
     </header>
     <main>
         <div class="container">
             <div class="jumbotron">
-                <p class="title" ><span style="color: ;">Lobe  </span><span style="color:
+                <p class="title"><span>Lobe </span><span style="color:
                     #04ddb2 ;">Tour</span></p>
-                <p class="content">Build your first machine learning model in ten minutes. No code or experience required.</p>
+                <p class="content">Build your first machine learning model in ten minutes. No code or experience
+                    required.</p>
             </div>
-            <div class=""></div>
+            <div class="video">
+                <div class="thumbnail" onclick="playVid()">
+                    <img src="Video.thumbnail.jpg" width="100%" alt=".." class="">
+                </div>
+                <span id="backgroundSpan" style="display: none;" onclick="hideVid()"></span>
+                <div id="videoContainer"  class="hidden">
+                    <iframe id="videoFrame" class="" width="100%" height="auto"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="testing" style="height: 200px;">
+            
+            </div>
         </div>
     </main>
 </body>
+
 </html>
