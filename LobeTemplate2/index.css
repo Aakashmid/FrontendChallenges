@@ -19,7 +19,8 @@ a {
 }
 
 #navbar {
-    background-color: rgba(255, 255, 255, 0.99);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
@@ -82,12 +83,12 @@ ul {
 
 
 /* main body style */
-main  {
-    padding:10px;
+main {
+    padding: 10px;
 }
 
 .jumbotron {
-    padding:0px;
+    padding: 0px;
 }
 
 .jumbotron .title {
@@ -95,9 +96,10 @@ main  {
     font-weight: 800;
     font-size: xx-large;
     text-align: center;
-    margin-bottom:5px ;
+    margin-bottom: 5px;
 }
-.jumbotron .content{
+
+.jumbotron .content {
     text-align: center;
     font-size: large;
     font-family: sans-serif;
@@ -105,83 +107,137 @@ main  {
     color: rgb(92, 92, 92);
 }
 
-.thumbnail{
+.thumbnail {
     overflow: hidden;
-    padding: 10px;
+    padding: 30px 20px;
     box-sizing: border-box;
     /* border-radius: 80px; */
 }
-.thumbnail img{
+
+.thumbnail img {
     border-radius: 20px;
 }
-#backgroundSpan{
+
+#backgroundSpan {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height : 100%;
+    height: 100%;
     background-color: rgba(128, 128, 128, 0.705);
+    backdrop-filter: blur(5px);
     box-sizing: border-box;
 }
 
 
-#videoContainer{
+#videoContainer {
     position: absolute;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0%;
+    /* padding:0 10px; */
 }
 
+#videoContainer iframe {
+    height: 30vh;
+}
+
+
+.btn-gr-2{
+    color: white;
+    font-size: larger;
+    font-family: Arial;
+    background-color: #04ddb2;
+    padding: 15px 25px;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+}
+
+.jumbotron-2{
+    padding:0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jumbotron-2 .title {
+    font-family: Arial;
+    font-weight: 900;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 5px;
+    color: rgb(61, 60, 60);
+}
+
+/* Footer styles */
+footer{
+    padding: 10px;
+    margin-top: 20px;
+}
 @media (min-width:601px) and (max-width:743px) {}
 
 @media (min-width:744px) {
     .btn-gr {
         display: block;
     }
-    
+
     #nav_links {
         display: flex;
     }
-    
+
     #hamburger {
         display: none;
     }
 }
 
+
 /* for larger screen  */
 @media (min-width:1025px) {
     #navbar {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
         justify-content: space-between;
         align-items: center;
         padding: 10px 60px;
     }
-    
+
     main div {
         width: 80%;
         margin: auto;
     }
-    
+
     .jumbotron {
-        padding-top:0px ;
+        padding-top: 0px;
         width: 40%;
     }
-    
+
     .jumbotron .title {
         font-family: Arial;
         font-weight: 800;
         font-size: 60px;
         text-align: center;
-        margin-bottom:10px ;
+        margin-bottom: 10px;
     }
-    .jumbotron .content{
+
+    .jumbotron .content {
         text-align: center;
         font-size: x-large;
         font-family: sans-serif;
         text-wrap: wrap;
-        
+
         /* width: 50%; */
     }
-    .thumbnail img:hover{
-        transition:transform 0.5s;
+
+    .thumbnail {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .thumbnail img:hover {
+        transition: transform 0.5s;
         transform: scale(1.01);
     }
 }
