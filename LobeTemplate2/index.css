@@ -131,22 +131,24 @@ main {
 
 
 #videoContainer {
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     left: 0%;
+    height: 40vh;
     /* padding:0 10px; */
 }
 
 #videoContainer iframe {
-    height: 30vh;
+    width: 100%;
+    height: 100%;
 }
 
 
-.btn-gr-2{
+.btn-gr-2 {
     color: white;
     font-size: larger;
     font-family: Arial;
@@ -157,12 +159,13 @@ main {
     border-radius: 40px;
 }
 
-.jumbotron-2{
-    padding:0 40px;
+.jumbotron-2 {
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .jumbotron-2 .title {
     font-family: Arial;
     font-weight: 900;
@@ -173,13 +176,61 @@ main {
 }
 
 /* Footer styles */
-footer{
+footer {
     padding: 10px;
     margin-top: 20px;
+    box-sizing: border-box;
 }
-@media (min-width:601px) and (max-width:743px) {}
 
-@media (min-width:744px) {
+.footer-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    /* padding-right:30px ; */
+}
+
+.footer-box {
+    padding-top: 20px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+
+}
+
+.footer-box li .links {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(105, 103, 103);
+}
+
+.footer-box li:hover {
+    transition: transform 0.5;
+    transform: scale(1.05);
+}
+
+.footer-box li {
+    padding: 8px;
+
+}
+
+.footer-box .section-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+@media (min-width:601px) and (max-width:743px){
+    #videoContainer {
+     width: 70vw;
+     transform: translate(25%,-50%);
+    }
+}
+
+@media (min-width:744px) and (max-width:1024px) {
     .btn-gr {
         display: block;
     }
@@ -190,6 +241,14 @@ footer{
 
     #hamburger {
         display: none;
+    }
+
+    #videoContainer {
+        top: 50%;
+        height: 50vh;
+        width: 70vw;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
 }
 
@@ -233,11 +292,56 @@ footer{
 
     .thumbnail {
         width: 100%;
-        padding: 20px 0;
+        padding: 20px 10px;
+
     }
 
     .thumbnail img:hover {
         transition: transform 0.5s;
         transform: scale(1.01);
+    }
+
+    .jumbotron-2 {
+        padding: 20px 40px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jumbotron-2 .title {
+        font-size: 50px;
+    }
+
+    .btn-gr-2 {
+        font-size: large;
+        font-weight: 600;
+        padding: 15px 35px;
+        margin-top: 20px;
+    }
+
+    #videoContainer {
+        top: 0;
+        height: 100vh;
+        width: 70vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Footer style */
+    footer hr {
+        width: 67%;
+        background-color: gray;
+    }
+
+    .footer-boxes {
+        width: 70%;
+        margin: auto;
+
+    }
+
+    .footer-box li {
+        padding: 10px;
+
     }
 }
