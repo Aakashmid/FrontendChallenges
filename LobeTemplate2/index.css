@@ -223,6 +223,7 @@ footer {
     font-weight: 700;
 }
 
+/*for tab */
 @media (min-width:601px) and (max-width:743px){
     #videoContainer {
      width: 70vw;
@@ -230,7 +231,19 @@ footer {
     }
 }
 
+/* For laptop */
 @media (min-width:744px) and (max-width:1024px) {
+    #videoContainer {
+        top: 50%;
+        height: 50vh;
+        width: 70vw;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+/* for screen larger than tab */
+@media (min-width:743px){
     .btn-gr {
         display: block;
     }
@@ -241,14 +254,6 @@ footer {
 
     #hamburger {
         display: none;
-    }
-
-    #videoContainer {
-        top: 50%;
-        height: 50vh;
-        width: 70vw;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
     }
 }
 
