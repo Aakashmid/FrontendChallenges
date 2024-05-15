@@ -48,11 +48,39 @@
 
         /* Navigation bar style */
         #navigation_bar {
-            padding: 10px 0px;
+            padding:0px 20px;
             justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
             flex-grow: 1;
-            
+            background-color: white;
+        }
+        .nav-link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            padding: 15px;
+        }
+        .nav-link img{
+            /* width: 50%; */
+            /* height: auto; */
+        }
+        .nav-link span{
+            margin-top: 3px;
+            color:gray;
+        }
+        #thumbnail{
+            /* width: fit-content; */
+            overflow: hidden;
+            width: 100%;
+            padding: 10px 0px;
+            box-sizing: border-box;
+        }
+        #thumbnail img{
+            border-radius: 10px;
+            width:  100%;
+            height: 100%;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -72,9 +100,24 @@
             </div>
         </div>
     </header>
+    <main style="position: absolute; top: 85px; padding: 0px 20px;">
+        <!-- landing page image -->
+        <div class="" id="thumbnail">
+            <img src="image/thumbnail1.png" alt="">
+        </div>
+
+        
+        <div class=""></div>
+    </main>
     <footer>
         <div class="flex" id="navigation_bar">
-   
+            <a href="" class="nav-link"><img src="image/HomeIcon.png"   alt="">
+                <span class="">Home</span>
+            </a>
+            <a href="" class="nav-link"><img src="image/servicesIcon.png"   alt="">
+                <span class="">Services</span></a>
+            <a href="" class="nav-link"><img src="image/activiyIcon.png" alt=""><span class="">Activity</span></a>
+            <a href="" class="nav-link"><img src="image/profileIcon.png"   alt=""><span class="">Profile</span></a>
         </div>
     </footer>
 </body>
