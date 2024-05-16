@@ -1,0 +1,43 @@
+
+/* remove default padding and margin browser apply */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /*include padding and border in calculating width of element*/
+}
+
+body{
+    background-color: #338cf4;
+}
+.container{
+    width: 90%;
+    background-color: white;
+    padding: 50px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow:0 25px 50px rgba(7, 20,35, 0.2);
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap:  wrap;
+}
+
+button{
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+button:active{
+    /* background-color: ; */
+}
