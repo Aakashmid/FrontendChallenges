@@ -41,3 +41,61 @@ button{
 button:active{
     /* background-color: ; */
 }
+
+/* 020929 - black */
+
+select{
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 5px;
+    outline: none;
+}
+
+.options label , .options select{
+    font-family: "Poppins",sans-serif;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="color"]{
+    /*by appearance , removing default style(appearance) for specific browsers */
+    appearance: none;
+    -webkit-appearance: none;  
+    -moz-appearance: none;
+
+    background-color: transparent;
+    height: 28px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 10px;
+    box-shadow:0 0 0 2px #B2BABB ;
+}
+input[type="color"]::-moz-color-swatch{
+    border-radius: 10px;
+    box-shadow:0 0 0 2px #B2BABB ;
+}
+
+#text_input{
+    padding: 20px;
+    border: 1px solid #020929;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    height: 50vh;
+}
+
+.active{
+    background-color: #D6EAF8;
+}
+
+button{
+    cursor: pointer;
+}
