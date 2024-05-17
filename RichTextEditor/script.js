@@ -1,4 +1,4 @@
-let optionButtons = document.querySelectorAll('.options');
+let optionButtons = document.querySelectorAll('.option-button');
 let advancOptionButton = document.querySelectorAll('.adv-option-button');
 let fontName = document.getElementById('fontName');
 let fontSizeRef = document.getElementById('fontSize');
@@ -12,6 +12,7 @@ let spacingButtons = document.querySelectorAll('.spacing');
 
 let formatButtons = document.querySelectorAll('.format');
 let scriptButtons = document.querySelectorAll('.script');
+let listButtons = document.querySelectorAll('.list');
 
 // font-list
 
@@ -27,6 +28,7 @@ const initializer = () => {
     highlighter(alignButtons, true);
     highlighter(spacingButtons, true);
     highlighter(scriptButtons, true);
+    highlighter(listButtons, true);
     highlighter(formatButtons, false);
 
     // create options for font names 
@@ -34,6 +36,7 @@ const initializer = () => {
         let option=document.createElement('option');
         option.value=value;
         option.innerHTML=value;
+        option.style.fontFamily=value;
         fontName.appendChild(option);  //append html element
     })
 
@@ -50,10 +53,39 @@ const initializer = () => {
 
 // main logic
 const modifyText=(command,defaultUi,value)=>{
-    
-}
+        // exeCommand execute command on selected text
+        document.execCommand(command,defaultUi,value);
+};
 
 
+// basic operation which don't need values
+optionButtons.forEach(button => {
+    button.addEventListener("click",()=>{  
+        modifyText(button.id,false,null);  // id of each button is name of operation(command) we want to do 
+    });
+});
+
+
+//  operation which need values (e.g font ,colors )
+
+advancOptionButton.forEach(button=>{
+    // change event is called when user choose different option from given choice
+    button.addEventListener("change",()=>{
+        modifyText(button.id,false,button.value);
+    });
+});
+
+// link
+linkButton.addEventListener("click",()=>{
+    let userlink=prompt('Enter a url ');
+    if (/http/i.test(userlink)) {
+        modifyText(linkButton.id,false,userlink);
+    }
+    else{
+        userlink="https:/"+userlink;
+        modifyText(linkButton.id,false,userlink);
+    }
+})
 
 
 
