@@ -5,83 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wayforce</title>
-    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/72038e3a92.js" crossorigin="anonymous"></script>
     <style>
-        .header-nav {
-            background-color: #387ADF;
-            padding: 5px 20px 2px 20px;
-        }
-
-        .header-nav div {
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            color: white;
-            font-size: x-large;
-            font-weight: 500;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .flex {
-            display: flex;
-        }
-
-        header {
-            position: fixed;
-            right: 0%;
-            left: 0%;
-        }
-
-        footer {
-            position: fixed;
-            right: 0%;
-            left: 0%;
-            bottom: 0%;
-        }
-
-        .header-icon a {
-            text-decoration: none;
-        }
-
-        /* Navigation bar style */
-        #navigation_bar {
-            padding:0px 20px;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-grow: 1;
-            background-color: white;
-        }
-        .nav-link{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            padding: 15px;
-        }
-        .nav-link img{
-            /* width: 50%; */
-            /* height: auto; */
-        }
-        .nav-link span{
-            margin-top: 3px;
-            color:gray;
-        }
-        #thumbnail{
-            /* width: fit-content; */
-            overflow: hidden;
-            width: 100%;
-            padding: 10px 0px;
-            box-sizing: border-box;
-        }
-        #thumbnail img{
-            border-radius: 10px;
-            width:  100%;
-            height: 100%;
-            object-fit: contain;
-        }
     </style>
 </head>
 
@@ -100,24 +26,70 @@
             </div>
         </div>
     </header>
-    <main style="position: absolute; top: 85px; padding: 0px 20px;">
+    <main style="position: absolute; top: 85px; padding: 0px 15px;">
         <!-- landing page image -->
         <div class="" id="thumbnail">
             <img src="image/thumbnail1.png" alt="">
         </div>
 
-        
-        <div class=""></div>
+
+        <div class="" id="Categories">
+            <h3 class="" style="font-family: sans-serif; padding: 0% 10px;">Categories</h3>
+            <div class="flex">
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/Labor.png" alt=""></div>
+                        <p class="categ-name">Labor</p>
+                </div>
+
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/plumber.png" alt=""></div>
+                        <p class="categ-name">Plumber</p>
+                </div>
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/electician.png" alt=""></div>
+                        <p class="categ-name">Electrician
+                        </p>
+                </div>
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/mecanic.png" alt=""></div>
+                        <p class="categ-name">Mecaninc</p>
+                </div>
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/Driver.png" alt=""></div>
+                        <p class="categ-name">Driver</p>
+                </div>
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/blacksmith.png" alt=""></div>
+                        <p class="categ-name">Blacksmith</p>
+                </div>
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/barbor.png" alt=""></div>
+                        <p class="categ-name">Barber</p>
+                </div>
+                <div class="categBox">
+                        <div class="categIcon"><img  src="image/ViewAllCat.png" alt=""></div>
+                        <p class="categ-name">All</p>
+                </div>
+                
+            </div>
+        </div>
+
+    
+        <div class="" id="recent_searches_container">
+            <div id="recent_contacts" class="flex">
+                <div class="card"></div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="flex" id="navigation_bar">
-            <a href="" class="nav-link"><img src="image/HomeIcon.png"   alt="">
+            <a href="" class="nav-link"><img src="image/HomeIcon.png" alt="">
                 <span class="">Home</span>
             </a>
-            <a href="" class="nav-link"><img src="image/servicesIcon.png"   alt="">
+            <a href="" class="nav-link"><img src="image/servicesIcon.png" alt="">
                 <span class="">Services</span></a>
             <a href="" class="nav-link"><img src="image/activiyIcon.png" alt=""><span class="">Activity</span></a>
-            <a href="" class="nav-link"><img src="image/profileIcon.png"   alt=""><span class="">Profile</span></a>
+            <a href="" class="nav-link"><img src="image/profileIcon.png" alt=""><span class="">Profile</span></a>
         </div>
     </footer>
 </body>
