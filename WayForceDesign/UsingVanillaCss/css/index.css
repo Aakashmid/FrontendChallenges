@@ -1,7 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 .header-nav {
     background-color: #387ADF;
     padding: 5px 20px 2px 20px;
 }
+
+
 
 .header-nav div {
     justify-content: space-between;
@@ -39,6 +45,7 @@ footer {
 
 /* Navigation bar style */
 #navigation_bar {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0px 20px;
     justify-content: space-between;
     align-items: baseline;
@@ -55,8 +62,13 @@ footer {
 }
 
 .nav-link span {
-    margin-top: 3px;
+    margin-top: 1px;
     color: gray;
+    font-size: 80%;
+}
+
+#navigation_bar .active span {
+    color: #387ADF;
 }
 
 #thumbnail {
@@ -75,25 +87,74 @@ footer {
 }
 
 /* categories icon css */
-#Categories div{
+#Categories div {
     flex-wrap: wrap;
     align-items: start;
 }
 
 .categBox {
     width: fit-content;
-    flex-grow: 1;  /*take all spaces (adjust according to spaces)*/
+    flex-grow: 1;
+    /*take all spaces (adjust according to spaces)*/
     text-align: center;
     padding-bottom: 20px;
 }
-.categIcon img{
+
+.categIcon img {
     width: 20vw;
     height: auto;
 }
 
-.categ-name{
+.categ-name {
     margin: 0%;
     padding-top: 4px;
     color: rgb(83, 83, 83);
     font-family: sans-serif;
+}
+
+
+/* recent searches container styles */
+/* #recent_searches{
+
+} */
+
+#ContactCardContainer {
+    flex-direction: column;
+}
+
+.contact-card {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contact-card .details-box {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.details-box .proffession {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.details-box .name {
+    color: #387ADF;
+}
+
+.details-box .location,
+.details-box .lastContactDate {
+    color: gray;
+}
+
+.phone-icon {
+    /* padding: 5px; */
+    flex-grow: 1;
 }
